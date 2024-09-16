@@ -1,7 +1,4 @@
 {
-  "homepage": "https://cbitccc.github.io/cbitccc",
-
-
   "name": "cbitcc-github-io",
   "private": true,
   "version": "0.0.0",
@@ -9,8 +6,6 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
