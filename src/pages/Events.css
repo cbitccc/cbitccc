@@ -1,0 +1,6 @@
+.events{
+    background: linear-gradient(90deg, rgba(26,51,119,1) 0%, rgba(19,39,126,1) 0%, rgba(0,13,36,1) 100%);
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}

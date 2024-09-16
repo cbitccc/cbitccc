@@ -1,0 +1,89 @@
+.OurTeam {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .OurTeam h1 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    position: relative;
+    animation: slideDown 1s ease-in-out;
+  }
+  
+  .Cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 15px; 
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+  
+  .profile-card {
+    background-color: rgb(0, 45, 114); 
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px; 
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .profile-card:hover {
+    scale: 1.025;
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+  
+  .show-more-button {
+    animation: slideUp 1s ease-in-out;
+  }
+  
+ 
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
+  @media (max-width: 1024px) {
+    .Cards {
+      grid-template-columns: repeat(3, 1fr); 
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .Cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  

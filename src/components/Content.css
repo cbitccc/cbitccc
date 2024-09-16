@@ -1,0 +1,77 @@
+.container {
+    background-color: black;
+    min-height: auto;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.About-Us, .Our-Mission {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+
+.About-Us {
+    transform: translateX(-150px); 
+}
+
+.Our-Mission {
+    transform: translateX(150px); 
+}
+
+.About-Us.animate, .Our-Mission.animate {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.About-Us h1, .Our-Mission h1 {
+    font-size: 2.5rem;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.About-Us h1::after, .Our-Mission h1::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #ea3e3b;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.5s ease;
+}
+
+.About-Us h1:hover::after, .Our-Mission h1:hover::after {
+    width: 100%;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+@media (max-width: 768px) {
+    .About-Us, .Our-Mission {
+        padding: 1.5rem;
+    }
+
+    .About-Us h1, .Our-Mission h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}

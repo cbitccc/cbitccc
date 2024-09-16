@@ -1,0 +1,12 @@
+
+
+.herobg {
+    background: linear-gradient(90deg, rgba(26,51,119,1) 0%, rgba(19,39,126,1) 0%, rgba(0,13,36,1) 100%);
+    display: flex;
+    flex-direction: column;
+}
+/* .heropage{
+    background-image: url(assets/ccctheme/design1.jpg);
+} */
+
+
